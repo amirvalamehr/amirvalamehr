@@ -1,0 +1,16 @@
+{
+  "nodes": [
+    "Sucrose", "Glucose", "AGPase", "SS", "Starch", "Inv"
+  ],
+  "inputs": [
+    "Light", "SinkDemand"
+  ],
+  "rules": {
+    "Sucrose": "Light and not Inv",
+    "Glucose": "Inv and Sucrose",
+    "AGPase": "Light or Sucrose",
+    "SS": "AGPase and Glucose",
+    "Starch": "SS and not SinkDemand",
+    "Inv": "SinkDemand or Glucose"
+  }
+}

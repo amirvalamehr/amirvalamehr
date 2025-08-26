@@ -1,0 +1,6 @@
+[
+  {"Light": true,  "SinkDemand": true},
+  {"Light": true,  "SinkDemand": false},
+  {"Light": false, "SinkDemand": false},
+  {"Light": true,  "SinkDemand": true}
+]
